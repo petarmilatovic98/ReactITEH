@@ -1,15 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
 
-function Meni(){
+function Meni() {
     return (
-        <ul>
-            <li>
-                <Link to="/">Pocetna strana</Link>
-            </li>
-            <li>
-                <Link to="/opis">Opis</Link>
-            </li>
+        <ul style={{ display: 'flex', justifyContent: 'space-evenly', marginTop: '5px' }}>
+            <Button variant="success"><Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Pocetna</Link></Button>{' '}
+            <Button variant="success"><Link to="/opis" style={{ textDecoration: 'none', color: 'white' }}>Opis</Link></Button>{' '}
         </ul>
     )
 }
