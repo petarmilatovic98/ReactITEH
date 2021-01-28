@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Pocetna from './Pocetna'
+import Opis from './Opis'
+import {Route, Link} from 'react-router-dom'
+import Meni from './Meni'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Meni />
+      <Route exact path="/" component={Pocetna} />
+      <Route exact path="/Opis" component={Opis} />
+
     </div>
   );
 }
