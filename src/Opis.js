@@ -25,12 +25,20 @@ function Opis() {
         <div>
             <h1>Strana za opis</h1>
             <br></br>
-            <h4>Aplikacija pruža mogućnosti korisnicima da kreiraju svoju listu filmova. Kada film bude odgledan,
+            <h4 style={{ marginLeft:250, marginRight:250 }}>Aplikacija pruža mogućnosti korisnicima da kreiraju svoju listu filmova. Kada film bude odgledan,
             korisnik ga može ukloniti iz liste. Filmovi se čuvaju u lokalnom stogage-u, tako da i nakon
             ponovog pokretanja stranice lista ostaje sačuvana.
             </h4>
-            <AnalogueClock {...clockOptions} />
-            <img src={image} alt="" width="400px"/>
+            <br></br>
+            <br></br>
+            <div style={{ display: "flex", justifyContent: 'space-evenly' }}>
+                
+                <AnalogueClock {...clockOptions} />
+                <img src={image} alt="" width="300px" height="300px" />
+               
+            </div>
+            <br></br>
+            <br></br>
         </div>
 
     );

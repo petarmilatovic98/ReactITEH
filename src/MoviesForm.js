@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {v4 as uuidv4} from 'uuid'
+import './MovieFormCSS.css'
 
 
 function MoviesForm({addMovie}){
@@ -23,9 +24,9 @@ function MoviesForm({addMovie}){
     }
 
     return(
-      <form onSubmit={handleSubmit}>
-          <input onChange={handleMovieInputChange} value={movie.name} name="name" type="text"/>
-          <button type="submit">Dodaj</button>
+      <form class="main-form" onSubmit={handleSubmit}>
+          <input autoComplete="off" onChange={handleMovieInputChange} value={movie.name} name="name" type="text"/>
+          <button class="addbtn" type="submit">Dodaj</button>
       </form>  
     );
 }

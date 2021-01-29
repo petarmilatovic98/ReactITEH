@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Pocetna from './Pocetna'
 import Opis from './Opis'
@@ -9,7 +8,7 @@ import React, {useState} from 'react'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:'#99ffbb'}}>
       <Meni />
       <Route exact path="/" component={Pocetna} />
       <Route exact path="/Opis" component={Opis} />
