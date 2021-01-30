@@ -29,7 +29,7 @@ function Pocetna() {
 
     return (
         <div>
-            <h1>Pocetna strana - dodavanje filmova u listu</h1>
+            <h1>Napravi svoju listu filmova</h1>
 
             <MoviesForm addMovie={addMovie} />
             <MovieList movies={movies}  removeMovie={removeMovie}/>

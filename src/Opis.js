@@ -23,10 +23,10 @@ function Opis() {
 
     return (
         <div>
-            <h1>Strana za opis</h1>
+            <h1>O aplikaciji</h1>
             <br></br>
             <h4 style={{ marginLeft:250, marginRight:250 }}>Aplikacija pruža mogućnosti korisnicima da kreiraju svoju listu filmova. Kada film bude odgledan,
-            korisnik ga može ukloniti iz liste. Filmovi se čuvaju u lokalnom stogage-u, tako da i nakon
+            korisnik ga može ukloniti iz liste. Filmovi se čuvaju u lokalnom storage-u, tako da i nakon
             ponovog pokretanja stranice lista ostaje sačuvana.
             </h4>
             <br></br>

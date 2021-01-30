@@ -1,9 +1,9 @@
 import './App.css';
 import Pocetna from './Pocetna'
 import Opis from './Opis'
-import {Route, Link} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import Meni from './Meni'
-import React, {useState} from 'react'
+import React from 'react'
 
 function App() {
 
