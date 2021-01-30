@@ -8,7 +8,6 @@ function MoviesForm({addMovie}){
     const [movie, setMovie] = useState({
         id: "",
         name: ""
-        // artist: ""
     });
 
     function handleMovieInputChange(e){
